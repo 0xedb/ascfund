@@ -17,12 +17,12 @@ app.get('/', (req, res) => {
 app.post('/fundasc', (req, res) => {
   console.log(req.body);
   sendmail(req.body.email);
-  res.status(200);
+  res.status(200).end();
 });
 
 app.post('/fundasc/code', (req, res) => {
   console.log(req.body);
-  res.status(200);
+  res.status(200).end();
 });
 
 app
