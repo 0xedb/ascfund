@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import nodeMailer from 'nodemailer';
 
 const sendmail = async (email: string) => {
-  const code = crypto.randomBytes(20).toString('hex');
+  const code = crypto.randomBytes(10).toString('hex');
   let transporter = nodeMailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
