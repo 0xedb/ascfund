@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-const PORT = process.env.FUNDUS_PORT || 9090;
+const PORT = process.env.FUNDUS_PORT || 9040;
 
 app.get('/', (req, res) => {
   res.send('working');
