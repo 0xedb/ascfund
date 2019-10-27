@@ -3,7 +3,7 @@ import cors = require('cors');
 import {sendmail} from './util';
 import bodyParser = require('body-parser');
 
-const app: express.Application = express();
+const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
