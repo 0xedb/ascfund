@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
-@media(min-width: 670px) {
-    
+@media (min-width: 670px) {
+  .form_container {
+    width: 500px;
+    padding: 30px;
+  }
 }

@@ -1,4 +1,5 @@
 @charset 'utf-8';
+@import url('mobile.css');
 @import url('desktop.css');
 
 *,
@@ -14,14 +15,9 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background: wheat;
+    background: #AF3A42;
     width: 100%;
     height: 100vh;
 }
 
 
-.form_container {
-    /* background: rgb(43, 43, 33);
-    width: 100%;
-    margin: 30px; */
-}

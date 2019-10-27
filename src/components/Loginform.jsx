@@ -13,28 +13,29 @@ function Loginform() {
   };
 
   return (
-    <div className="form_container card">
-      <div className="card-image">hello</div>
+    <div className="form_container card"> 
       <form method="POST" action="http://localhost:9090/fundasc">
         <input
           name="email"
           type="email"
           className="input is-medium"
+          placeholder="example@example.com"
           required
           value={email}
           onChange={handleEmailChange}
         />
         <input
-          className="button is-success is-medium is-fullwidth"
+          className="button is-primary is-medium is-fullwidth"
           type="submit"
           value="Get Code"
         />
       </form>
-      <form method="POST" action="http://localhost:9090/fundasc/code">
+      <form className="code_form" method="POST" action="http://localhost:9090/fundasc/code">
         <input
           name="code"
           type="text"
           className="input is-medium"
+          placeholder="login code"
           required
           value={code}
           onChange={handleCodeChange}
