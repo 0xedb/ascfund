@@ -1,7 +1,7 @@
-import express = require('express');
-import cors = require('cors');
-import {sendmail} from './util';
-import bodyParser = require('body-parser');
+const express = require( "express" );
+const cors = require('cors');
+const {sendmail} from './util';
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(cors());
