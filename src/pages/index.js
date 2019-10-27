@@ -1,11 +1,12 @@
 import React from 'react';
 import Meta from '../components/Meta';
-import Forms from '../components/Forms';
- 
+// import Forms from '../components/Forms';
+import LoginForm from '../components/Loginform';
+
 const Index = () => (
   <>
     <Meta />
-     hello
+    <LoginForm />
   </>
 );
 

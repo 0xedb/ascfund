@@ -5,18 +5,30 @@
   "author": "theBashShell <edohbruno@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop"
+    "dev": "gatsby develop",
+    "sev": "nodemon ./src/server/server.ts", 
+    "build": "tsc && node public/server/server.js"
   },
   "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
     "bulma": "^0.8.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "gatsby": "^2.17.4",
     "gatsby-plugin-react-helmet": "^3.1.13",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.3.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/cors": "^2.8.6",
+    "@types/node": "^12.11.7",
+    "@types/nodemailer": "^6.2.2",
     "gatsby-cli": "^2.8.5"
   }
 }
