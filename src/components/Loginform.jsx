@@ -21,8 +21,8 @@ function Loginform() {
           className="input is-medium"
           placeholder="example@example.com"
           required
-          value={email}
-          onChange={handleEmailChange}
+          value={email} 
+          onChange={handleEmailChange} 
         />
         <input
           className="button is-primary is-medium is-fullwidth"
