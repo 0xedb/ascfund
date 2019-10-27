@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 const PORT = process.env.FUNDUS_PORT || 9040;
 
 app.get('/', (req, res) => {
-  res.send('working');
+  res.status(200).send('working');
 });
 
 app.post('/fundasc', (req, res) => {
@@ -25,4 +25,6 @@ app.post('/fundasc/code', (req, res) => {
   res.status(200);
 });
 
-app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
+app
+  .listen(PORT, () => console.log(`Running on http://localhost:${PORT}`))
+  .on('error', err => console.log(err));
