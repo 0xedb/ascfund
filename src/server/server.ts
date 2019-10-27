@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 const PORT = process.env.FUNDUS_PORT || 9040;
 
 app.get('/', (req, res) => {
-  res.status(200).send('working');
+  res.redirect('https://fundasc.ga');
 });
 
 app.post('/fundasc', (req, res) => {
