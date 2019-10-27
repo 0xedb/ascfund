@@ -1,1 +1,1 @@
-web: node public/server/server.js
+web: tsc && node public/server/server.js
