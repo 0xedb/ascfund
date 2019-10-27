@@ -25,4 +25,4 @@ app.post('/fundasc/code', (req, res) => {
   res.status(200);
 });
 
-app.listen(PORT, () => console.log(`Running on https://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
