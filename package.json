@@ -5,7 +5,7 @@
   "author": "theBashShell <edohbruno@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop -H 0.0.0.0",
     "sev": "nodemon ./src/server/server.ts"
   },
   "dependencies": {
