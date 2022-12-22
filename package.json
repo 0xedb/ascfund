@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "gatsby": "^2.17.4",
     "gatsby-plugin-react-helmet": "^3.1.13",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "nodemailer": "^6.3.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
